@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- url.py name used here -->
+    <form action="{% url 'login_page' %}" method = 'POST'> {% csrf_token %}
+        Enter username : <input type="text" name="username"><br>
+        Enter password : <input type="password" name="password"><br>
+
+        <button type="submit">Login</button>
+        <p>Create new account <a href="{% url 'signup_page' %}">Signup</a></p>
+    </form>
+</body>
+</html>

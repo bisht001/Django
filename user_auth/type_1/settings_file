@@ -1,0 +1,9 @@
+settings.py changes
+
+
+LOCAL_APPS = [
+    'app.core',
+    'app.users',
+]
+
+INSTALLED_APPS += LOCAL_APPS
